@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live To Learning Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="aos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light navbar-light position-fixed w-100" id="navbar">
+        <div class="brand pl-4">
+            <a class="navbar-brand" href="#">
+                <img src="asset/Logo2.png" alt="" id="logo2">
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto text-center" id="navs">
+                <a class="nav-link active" href="#landing" id="home">Home</a>
+                <a class="nav-link" href="#about" id="abt">About</a>
+                <a class="nav-link" href="#benefit" id="bnf">Benefit</a>
+                <a class="nav-link" href="#expectation" id="ept">Expectation</a>
+                <div class="dropdown" id="drop">
+                    <button class="dropbtn nav-link" dropdown-toggle id="button-dropdown" onclick="clickClass()">
+                        Class 
+                        <img src="asset/down-arrow.svg" alt="" width="10" class="ml-1">
+                    </button>
+                    <div class="dropdown-content" id="content">
+                        <a href="index.html">Microsoft Excel & Web Programming</a>
+                        <a href="bimbel.html" id="bimbel">Bimbel</a>
+                    </div>
+                </div>
+                <div class="dropdown-responsive" id="responsive" style="display: none;">
+                    <a href="index.html">Microsoft Excel & Web Programming</a>
+                    <a href="bimbel.html" id="bimbel">Bimbel</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="landing" id="landing">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <center>
+                <p style="margin-bottom: 0;font-size: 18px;">
+                    Harga mulai dari <strong style="text-decoration: line-through;">Rp150.000</strong> <strong style="color: crimson;">Rp125.000</strong><br>
+                </p>
+                <strong style="font-size: 25px;" id="counter"></strong>
+            </center>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="landing-content">
+            <div data-aos="zoom-in-up">
+                <h1>Kelas Microsoft Excel dan Web Programming</h1>
+                <p class="quotes">Saatnya untuk memulai hal yang baru bersama</p>
+                <p class="price">Harga mulai dari <strong style="text-decoration: line-through;">Rp150.000</strong> <strong style="color:crimson;">Rp125.000</strong></p>
+                <p class="counter" id="timer"><span>1</span> : <span>24</span> : <span>30</span> : <span>14</span></p>
+                <a href="https://docs.google.com/forms/d/1tEZQDzK4unNWIGD_kO7VgJUtUKHL0yD0RXxx_hgyDq0/viewform?edit_requested=true" target="_blank">Daftar Kelas</a>
+            </div>
+            <img src="asset/home.png" alt="" data-aos="zoom-in-down">
+        </div>
+        <a href="https://bit.ly/LTLContactPerson" target="_blank">
+            <div class="whatsapp-button" id="whatsapp">
+                <img src="asset/whatsapp.svg" alt="">
+            </div>
+        </a>
+    </section>
+    <section class="about" id="about">
+        <img src="asset/about.png" alt="" data-aos="fade-up">
+        <div data-aos="fade-down">
+            <h1>About</h1>
+            <p>Pada kelas Microsoft Excel, kita akan belajar mengenai penggunaan rumus fungsi, membuat diagram, pivot tables, power pivot,  dan masih banyak hal lainnya yang dapat membantu pekerjaan menjadi lebih mudah dan cepat untuk dikerjakan.</p>
+            <p>Pada kelas Web Programming, kita akan belajar membuat tampilan
+                website sederhana. Tidak hanya itu, kita juga akan belajar membuat website menjadi responsive agar tampilan dapat tertata dengan rapih di berbagai device serta melakukan hosting pada website agar dapat diakses secara live oleh pengguna.</p>
+        </div>
+    </section>
+    <section class="benefit" id="benefit">
+        <div class="content-benefit" data-aos="zoom-in-up">
+            <h1>Mengapa ikut kelas Microsoft Excel & Website Programming?</h1>
+            <div class="line"></div>
+        </div>
+        <div id="carouselExampleIndicators" data-aos="zoom-in-up" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <h3><center>Mentoring</center></h3>
+                    <center><img src="asset/mentor.svg" alt="..." class="mentoring"></center>
+                </div>
+                <div class="carousel-item active">
+                    <h3><center>Certification</center></h3>
+                    <center><img src="asset/certificate.svg" alt="..." class="certification"></center>
+                </div>
+                <div class="carousel-item">
+                    <h3><center>Modul</center></h3>
+                    <center><img src="asset/storytelling.svg" class="modul" alt="..."></center>
+                </div>
+                <div class="carousel-item">
+                    <h3><center>Hardskill</center></h3>
+                    <center><img src="asset/tools.svg" class="hardskill" alt="..."></center>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <section class="expectation" id="expectation">
+        <h1 data-aos="fade-down">Ekspektasi Pembelajaran</h1>
+        <div class="class" data-aos="fade-up">
+            <div class="excel">
+                <p>MICROSOFT EXCEL</p>
+                <img src="asset/excel.jpg" alt="">
+            </div>
+            <div class="web">
+                <p>WEB PROGRAMMING</p>
+                <a href="https://brilyannathanael.github.io/" target="_blank">
+                    <img src="asset/web.jpg" alt="">
+                    <p id="click">Click untuk pergi ke website</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="foots">
+            <a href="#landing"><img src="asset/Logo2.png" alt=""></a>
+            <div>
+                <p>CP: 081286100804(Anggita)</p>
+                <p>&copy; 2021 Live To Learn Project</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.js"></script>
+    <script src="aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500,
+        });
+    </script>
+    <script>
+        $('.carousel').carousel({
+            interval: 1000 * 1
+        });
+        var scroll = new SmoothScroll('a[href*="#"]',{
+            speed:1500
+        });
+        $('#button-dropdown').css('color', 'white');
+    </script>
+    <script>
+        function clickClass(){
+            var length = $(window).width();
+            var x= document.getElementById("responsive");
+            if(length < 992){
+                if (x.style.display === "none") {
+                    x.style.display = "flex";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+            else{
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        var length = $(window).width();
+        if(length > 1000){
+            $('#responsive').css('display', 'none');
+        }
+        else{
+            $('nav').addClass('scrolled');
+            $('#navbar').removeClass('navbar-dark').addClass('navbar-light');
+            $('#logo1').css('display', 'none');
+            $('#logo2').css('display', 'block');
+        }
+    </script>
+    <script>
+        $(window).scroll(function(){
+            if ($(this).scrollTop() < 120) {
+                $('#whatsapp').removeClass('transition-whatsapp');
+            }
+            else{
+                $('#whatsapp').addClass('transition-whatsapp');
+            }
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 120);
+
+            if($(this).scrollTop() > 1450){
+                $('#whatsapp').removeClass('transition-whatsapp');
+            }
+            if ($(this).scrollTop() < 500) { //angkanya tergantung besar pagenya
+                $('#home').addClass("active");
+                $('#abt').removeClass("active");
+                $('#bnf').removeClass("active");
+                $('#ept').removeClass("active");
+            } else if ($(this).scrollTop() > 550 && $(this).scrollTop() < 890) { //tambahin besar px page
+                $('#home').removeClass("active");
+                $('#abt').addClass("active");
+                $('#bnf').removeClass("active");
+                $('#ept').removeClass("active");
+            } else if ($(this).scrollTop() > 890 && $(this).scrollTop() < 1550) { //tambahin besar px page
+                $('#home').removeClass("active");
+                $('#abt').removeClass("active");
+                $('#bnf').addClass("active");
+                $('#ept').removeClass("active");
+            }
+            else if ($(this).scrollTop() > 1550) { //tambahin besar px page
+                $('#home').removeClass("active");
+                $('#abt').removeClass("active");
+                $('#bnf').removeClass("active");
+                $('#ept').addClass("active");
+            }
+        });
+    </script>
+    <script>
+        var countDownDate = new Date("Mar 21, 2021 00:00:00").getTime();
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+            
+            // Find the distance between now an the count down date
+            var distance = countDownDate - now;
+            
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // Output the result in an element with id="demo"
+            document.getElementById("counter").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+            document.getElementById("timer").innerHTML = "<span>"+days+"</span> : <span>"+hours+"</span> : <span>"+minutes+"</span> : <span>"+seconds+"</span>";
+            
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("counter").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
