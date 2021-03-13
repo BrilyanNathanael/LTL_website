@@ -140,6 +140,10 @@ nav .dropdown-responsive {
     height: 380px;
 }
 
+.landing-content div .due {
+    display: none;
+}
+
 .whatsapp-button {
     background-color: #49c557;
     padding: .5em;
