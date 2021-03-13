@@ -54,6 +54,7 @@
                 <p style="margin-bottom: 0;font-size: 18px;">
                     Harga Early Bird hanya <strong style="text-decoration: line-through;">Rp150.000</strong> <strong style="color: crimson;">Rp125.000</strong><br>
                 </p>
+                <p>Sebelum 21 Mar 2021</p>
                 <strong style="font-size: 25px;" id="counter"></strong>
             </center>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -65,6 +66,7 @@
                 <h1>Kelas Microsoft Excel dan Web Programming</h1>
                 <p class="quotes">Saatnya untuk memulai hal yang baru bersama</p>
                 <p class="price">Harga Ealy Bird hanya <strong style="text-decoration: line-through;">Rp150.000</strong> <strong style="color:crimson;">Rp125.000</strong></p>
+                <p class="due">Sebelum <span>21 Mar 2021</span></p>
                 <p class="counter" id="timer"><span>1</span> : <span>24</span> : <span>30</span> : <span>14</span></p>
                 <a href="https://docs.google.com/forms/d/1tEZQDzK4unNWIGD_kO7VgJUtUKHL0yD0RXxx_hgyDq0/viewform?edit_requested=true" target="_blank">Daftar Kelas</a>
             </div>
@@ -251,10 +253,10 @@
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
             
             // Output the result in an element with id="demo"
-            document.getElementById("counter").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
+            document.getElementById("counter").innerHTML = days + "h " + hours + "j "
+            + minutes + "m " + seconds + "d ";
 
-            document.getElementById("timer").innerHTML = "<span>"+days+"</span> : <span>"+hours+"</span> : <span>"+minutes+"</span> : <span>"+seconds+"</span>";
+            document.getElementById("timer").innerHTML = "<span>"+days+"h</span> : <span>"+hours+"j</span> : <span>"+minutes+"m</span> : <span>"+seconds+"d</span>";
             
             // If the count down is over, write some text 
             if (distance < 0) {
