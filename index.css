@@ -460,6 +460,10 @@ footer .foots div p {
         font-size: 25px;
     }
 
+    .landing-content div .due {
+        font-size: 25px;
+    }
+
     .landing-content div .counter {
         font-size: 40px;
         display: block;
@@ -472,6 +476,21 @@ footer .foots div p {
         padding: .5em;
         border-radius: 10px;
         box-shadow: 1px 1px 2px 1px #C8D4E2;
+    }
+
+    .landing-content div .price {
+        margin: 0;
+    }
+
+    .landing-content div .due {
+        margin-top: 0;
+        color: #1B377F;
+        margin-bottom: 3em;
+    }
+
+    .landing-content div .due span {
+        color: crimson;
+        font-weight: bold;
     }
 
     .landing-content img {
@@ -543,6 +562,12 @@ footer .foots div p {
         font-size: 15px;
     }
 
+    .landing-content div .counter {
+        font-size: 30px;
+        margin-bottom: 2em;
+        color: #1B377F;
+    }
+
     .benefit {
         display: flex;
         flex-direction: column;
@@ -601,7 +626,7 @@ footer .foots div p {
     }
 
     .landing-content div .counter {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .benefit .carousel .carousel-inner {
@@ -652,12 +677,13 @@ footer .foots div p {
         font-size: 20px;
     }
 
-    .landing-content div .price {
+    .landing-content div .price,
+    .landing-content div .due {
         font-size: 18px;
     }
 
     .landing-content div .counter {
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 2em;
         color: #1B377F;
     }
@@ -767,5 +793,11 @@ footer .foots div p {
 
     footer .foots div p {
         text-align: left;
+    }
+}
+
+@media (max-width: 300px) {
+    .landing-content div .counter {
+        font-size: 18px;
     }
 }
