@@ -113,12 +113,12 @@ nav .dropdown-responsive {
     font-weight: bold;
 }
 
-.landing .content-landing .whatsapp {
+.landing .content-landing a .whatsapp {
     padding: .5em;
     margin-top: 1em;
 }
 
-.landing .content-landing .whatsapp a {
+.landing .content-landing a .whatsapp {
     color: #fff;
     font-weight: bold;
     background-color: #49c557;
@@ -129,11 +129,16 @@ nav .dropdown-responsive {
     text-decoration: none;
 }
 
+.landing .content-landing a .whatsapp img {
+    width: 30px;
+}
+
 .whatsapp-button {
     background-color: #49c557;
     padding: .5em;
     border-radius: 15px;
     position: fixed;
+    box-shadow: -2px 3px 5px 1px #90bcbc;
     right: 40px;
     bottom: 10px;
     cursor: pointer;
@@ -562,6 +567,7 @@ footer .foots div p {
 }
 
 @media (max-width: 480px) {
+
     .landing .content-landing {
         padding: 2em 1em;
     }
@@ -575,10 +581,14 @@ footer .foots div p {
         width: 360px;
     }
 
-    .landing .content-landing .whatsapp a {
+    .landing .content-landing a .whatsapp {
         font-size: 15px;
-        padding: .8em;
         border-radius: 10px;
+        padding: .8em;
+    }
+
+    .landing .content-landing a .whatsapp img {
+        width: 20px;
     }
 
     .about {
