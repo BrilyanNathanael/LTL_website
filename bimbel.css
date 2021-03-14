@@ -118,6 +118,10 @@ nav .dropdown-responsive {
     margin-top: 1em;
 }
 
+.landing .content-landing a:hover {
+    text-decoration: none;
+}
+
 .landing .content-landing a .whatsapp {
     color: #fff;
     font-weight: bold;
