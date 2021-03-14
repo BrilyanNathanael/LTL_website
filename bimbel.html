@@ -266,7 +266,7 @@
                 $('#off').removeClass("active");
                 $('#on').removeClass("active");
             }
-            else if ($(this).scrollTop() > 1100 && $(this).scrollTop() < 1500) { //tambahin besar px page
+            else if ($(this).scrollTop() > 1100 && $(this).scrollTop() < 1450) { //tambahin besar px page
                 // alert($(this).scrollTop());
                 $('#home').removeClass("active");
                 $('#abt').removeClass("active");
@@ -274,10 +274,8 @@
                 $('#off').addClass("active");
                 $('#on').removeClass("active");
             }
-            if($(this).scrollTop() > 1450){
+            else if ($(this).scrollTop() > 1450) { //tambahin besar px page
                 $('#whatsapp').removeClass('transition-whatsapp');
-            }
-            else if ($(this).scrollTop() > 1500) { //tambahin besar px page
                 $('#home').removeClass("active");
                 $('#abt').removeClass("active");
                 $('#bnf').removeClass("active");
