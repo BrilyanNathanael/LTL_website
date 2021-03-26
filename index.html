@@ -52,9 +52,9 @@
         <div class="alert alert-warning alert-dismissible fade show" role="alert">
             <center>
                 <p style="margin-bottom: 0;font-size: 18px;">
-                    Harga Early Bird hanya <strong style="text-decoration: line-through;">Rp150.000</strong> <strong style="color: crimson;">Rp125.000</strong><br>
+                    Harga hanya <strong>Rp150.000</strong> sampai 28 Maret 2021<br>
+                    Peserta Terbatas! Daftar Sekarang Sebelum Kehabisan!
                 </p>
-                <p style="font-size: 18px;margin-bottom:0.5em;">Sebelum 21 Mar 2021</p>
                 <strong style="font-size: 25px;" id="counter"></strong>
             </center>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -65,8 +65,7 @@
             <div data-aos="zoom-in-up">
                 <h1>Kelas Microsoft Excel dan Web Programming</h1>
                 <p class="quotes">Saatnya untuk memulai hal yang baru bersama</p>
-                <p class="price">Harga Ealy Bird hanya <strong style="text-decoration: line-through;">Rp150.000</strong> <strong style="color:crimson;">Rp125.000</strong></p>
-                <p class="due">Sebelum <span>21 Mar 2021</span></p>
+                <p class="price">Harga hanya <strong>Rp150.000</strong> sampai 28 Maret 2021<br>Peserta Terbatas! Daftar Sekarang Sebelum Kehabisan!</p>>
                 <p class="counter" id="timer"><span>1</span> : <span>24</span> : <span>30</span> : <span>14</span></p>
                 <a href="https://docs.google.com/forms/d/1tEZQDzK4unNWIGD_kO7VgJUtUKHL0yD0RXxx_hgyDq0/viewform?edit_requested=true" target="_blank">Daftar Kelas</a>
             </div>
@@ -261,7 +260,8 @@
             // If the count down is over, write some text 
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("counter").innerHTML = "EXPIRED";
+                document.getElementById("counter").innerHTML = "";
+                document.getElementById("timer").innerHTML = "";
             }
         }, 1000);
     </script>
